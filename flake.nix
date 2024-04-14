@@ -13,7 +13,9 @@
     in {
       devShells.default = pkgs.mkShell {
         packages = with pkgs; [
-          python3
+          (python3.withPackages (py-pkgs: with python3Packages; [
+            python-lsp-server
+          ]))
         ];
       };
     });
