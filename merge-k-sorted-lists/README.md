@@ -1,0 +1,2 @@
+# 23. Merge k Sorted Lists
+My basic approach for this problem mirrors the merging process I learned for 2 lists for the merging in merge sort; that is, iterate over all lists and look only at the first entry since this is guaranteed to be the smallest due to the sorted property of all lists. From there remove the smallest entry from that list and add it to the result. Keep repeating this until all lists are empty and the result is a sorted list.
